@@ -7,7 +7,7 @@
     <title>Catnip Box</title>
   </head>
   <body>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <div id="mocha"></div>
     <header id="header">
       <nav class="zone blue sticky" id="nav-bar">
         <ul class="main-nav">
@@ -18,9 +18,11 @@
                 id="header-img"
             /></a>
           </li>
-          <li class="push nav-link"><a href="#about">About</a></li>
-          <li class="push nav-link"><a href="#reviews">Reviews</a></li>
-          <li class="push nav-link"><a href="#purchase">Purchase</a></li>
+          <li class="push"><a class="nav-link" href="#about">About</a></li>
+          <li class="push"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="push">
+            <a class="nav-link" href="#subscribe">Subscribe</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -55,7 +57,7 @@
         </div>
       </section>
       <section>
-        <div id="purchase" class="section-container">
+        <div id="subscribe" class="section-container">
           <h2>
             Choose your subscription
           </h2>
@@ -65,8 +67,50 @@
             quia omnis facilis! Voluptas hic, rem illo vel nostrum dolorem at
             quasi ex.
           </p>
+          <ul id="subscription-list">
+            <li class="flex-li">
+              <img
+                src="https://github.com/jong649/fcc-landing-page/blob/master/img/logo.png?raw=1"
+                alt="Small cat"
+                class="subscription-icons"
+              />
+              <h3>Kitten: A large amount of catnip each month</h3>
+            </li>
+            <li class="flex-li">
+              <img
+                src="https://github.com/jong649/fcc-landing-page/blob/master/img/logo.png?raw=1"
+                alt="Medium cat"
+                class="subscription-icons medium"
+              />
+              <h3>Long boiiiiiiii: A larger amount of catnip each month</h3>
+            </li>
+            <li class="flex-li">
+              <img
+                src="https://github.com/jong649/fcc-landing-page/blob/master/img/logo.png?raw=1"
+                alt="Large cat"
+                class="subscription-icons large"
+              />
+              <h3>Big mama: The largest amount of catnip each month</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div id="inputEmail" class="section-container">
+          <h2>
+            Join our mailing list
+          </h2>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="post"
+          >
+            <input id="email" type="email" placeholder="Enter email" />
+            <input id="submit" type="submit" value="Place Order" />
+          </form>
         </div>
       </section>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

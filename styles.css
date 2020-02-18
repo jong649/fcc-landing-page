@@ -54,14 +54,15 @@ a {
 
 .main-nav {
   display: flex;
-  font-size: 0.7em;
+  font-size: 1em;
   list-style: none;
   margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
   .main-nav {
-    font-size: 0.5em;
+    flex-wrap: wrap;
+    font-size: 0.7em;
     padding: 0;
   }
 }
@@ -88,6 +89,34 @@ a {
 #content-container {
   padding: 255px 50px 30px 50px;
   text-align: center;
+}
+
+#subscription-list {
+  list-style-type: none;
+}
+
+.flex-li {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-icons {
+  height: 100px;
+  width: 100px;
+}
+
+.subscription-icons.medium {
+  height: 125px;
+  width: 125px;
+}
+
+.subscription-icons.large {
+  height: 150px;
+  width: 150px;
+}
+
+#subscribe {
+  margin-bottom: 0;
 }
 
 .section-container {
